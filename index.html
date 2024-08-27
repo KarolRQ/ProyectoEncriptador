@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptar y Desencriptar Texto</title>
+    <link rel="stylesheet" href="style.css">
+    </link>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <img src="assets/alura.png" alt="alura" class="logo">
+    </header>
+
+    <main>
+        <section class="section">
+            <textarea class="textarea" rows="8" cols="10" placeholder="Ingresa texto aquí"></textarea>
+            <div class="containerInfo">
+                <img class="img" src="./assets/Vector.png"> Solo letras minúsculas y sin acentos
+            </div>
+            <div class="botones">
+                <button class="btn_encriptar" onclick="botonEncriptar()" aria-placeholder="">
+                    Encriptar
+                </button>
+                <button class="btn_desencriptar" onclick="botonDesencriptar()">
+                    Desencriptar
+                </button>
+            </div>
+        </section>
+        <section class="section2">
+            <textarea class="mensaje" rows="5" cols="10" placeholder=""></textarea>
+            <div class="muñeco">
+                <img class="img" src="./assets/Muñeco.png">
+            </div>
+            <div class="textosMsj">
+                <p class="texto1">Ningún mensaje fue encontrado</p>
+                <p class="texto2">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <button class="btn_copiar">Copiar</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
